@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LingoLearn — Вивчення іноземних слів</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .hero-section { background: #007bff; color: white; padding: 40px 0; }
+        .word-card { min-height: 250px; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: bold; border-radius: 15px; }
+        footer { background: #343a40; color: white; padding: 20px 0; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">LingoLearn</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Головна</a></li>
+                        <li class="nav-item"><a class="nav-link" href="profile.html">Профіль</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Про додаток</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Вхід</a></li>
+                        <li class="nav-item"><a class="nav-link" href="register.html">Реєстрація</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section text-center">
+            <div class="container">
+                <h1>Вивчення іноземних слів</h1>
+                <p class="lead">Твій шлях до вільного володіння мовою починається тут </p>
+            </div>
+        </section>
+
+        <div class="container my-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="list-group">
+                        <button class="list-group-item list-group-item-action active">Режим вивчення</button>
+                        <button class="list-group-item list-group-item-action">Контроль знань (Тест)</button>
+                        <button class="list-group-item list-group-item-action">Мій словник</button>
+                    </div>
+                    
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <h5>Прогрес за сьогодні</h5>
+                            <div class="progress mt-3">
+                                <div class="progress-bar bg-success" style="width: 65%">65%</div>
+                            </div>
+                            <p class="small mt-2 text-muted">Вивчено: 13 слів із 20 запланованих.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-white">
+                            <span class="badge bg-primary">English — Ukrainian</span>
+                        </div>
+                        <div class="card-body text-center p-5">
+                            <div class="word-card border mb-4 bg-light">
+                                Perseverance
+                            </div>
+                            <div class="d-flex justify-content-center gap-3">
+                                <button class="btn btn-outline-secondary btn-lg">Показати переклад</button>
+                                <button class="btn btn-success btn-lg">Знаю!</button>
+                                <button class="btn btn-danger btn-lg">Ще вчу</button>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-link text-decoration-none">← Попереднє слово</button>
+                            <span class="mx-3 text-muted">Слово 5 із 50</span>
+                            <button class="btn btn-link text-decoration-none">Наступне слово →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center">
+        <div class="container">
+            <p>© 2026 LingoLearn Application. Розроблено Анастасією Вакулко.</p>
+            <p class="small text-secondary">Лабораторна робота №1 з дисципліни "Web-дизайн"</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

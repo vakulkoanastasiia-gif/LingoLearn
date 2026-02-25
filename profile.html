@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профіль користувача — LingoLearn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; display: flex; flex-direction: column; min-height: 100vh; }
+        main { flex: 1; }
+        .profile-header { background: #007bff; color: white; padding: 30px 0; margin-bottom: 30px; }
+        footer { background: #343a40; color: white; padding: 20px 0; }
+        .table-container { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">LingoLearn</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="profile.html">Профіль</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">Про додаток</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Вхід</a></li>
+                        <li class="nav-item"><a class="nav-link" href="register.html">Реєстрація</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-header text-center">
+            <div class="container">
+                <h1>Мій профіль</h1>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 table-container">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="https://dummyimage.com/100" alt="Avatar" class="rounded-circle me-3">
+                        <div>
+                            <h3>Анастасія Вакулко</h3>
+                            <p class="text-muted">Студентка, рівень English: B2</p>
+                        </div>
+                    </div>
+
+                    <table class="table table-hover align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th scope="col" style="width: 40%;">Параметр</th>
+                                <th scope="col">Значення</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Ім'я</strong></td>
+                                <td>Анастасія</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Email</strong></td>
+                                <td>vakulko.a@example.com</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Стать</strong></td>
+                                <td>Жіноча</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Дата народження</strong></td>
+                                <td>15 травня 2005</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Мова вивчення</strong></td>
+                                <td>Англійська</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Слів вивчено</strong></td>
+                                <td>452</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Дата реєстрації</strong></td>
+                                <td>24.02.2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="mt-4 d-flex justify-content-end">
+                        <button class="btn btn-primary me-2">Редагувати профіль</button>
+                        <button class="btn btn-outline-danger">Вийти</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center">
+        <div class="container">
+            <p>© 2026 LingoLearn Application. Розроблено Анастасією Вакулко.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
