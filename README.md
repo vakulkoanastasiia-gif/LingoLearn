@@ -10,8 +10,8 @@
 Тематика додатка — **LingoLearn** (Вивчення іноземних слів: режим вивчення та контролю знань).
 
 ### 🔗 Посилання на ресурси
-* **Репозиторій на GitHub:** [https://github.com/username/repository](https://github.com/username/repository) 
-
+* **Репозиторій на GitHub:** https://github.com/vakulkoanastasiia-gif/LingoLearn
+* **GitHub Pages:** https://vakulkoanastasiia-gif.github.io/LingoLearn/
 ---
 
 ### 📂 Опис проєкту
