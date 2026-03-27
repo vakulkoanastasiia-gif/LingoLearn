@@ -46,10 +46,9 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 table-container">
                     <div class="d-flex align-items-center mb-4">
-                        <img src="https://dummyimage.com/100" alt="Avatar" class="rounded-circle me-3">
+                        <img id="profile-avatar" src="https://dummyimage.com/100" alt="Avatar" class="rounded-circle me-3">
                         <div>
-                            <h3>Анастасія Вакулко</h3>
-                            <p class="text-muted">Студентка, рівень English: B2</p>
+                            <h3 id="profile-name-header">Анастасія Вакулко</h3>
                         </div>
                     </div>
 
@@ -60,41 +59,41 @@
                                 <th scope="col">Значення</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Ім'я</strong></td>
-                                <td>Анастасія</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Email</strong></td>
-                                <td>vakulko.a@example.com</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Стать</strong></td>
-                                <td>Жіноча</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Дата народження</strong></td>
-                                <td>15 травня 2005</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Мова вивчення</strong></td>
-                                <td>Англійська</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Слів вивчено</strong></td>
-                                <td>452</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Дата реєстрації</strong></td>
-                                <td>24.02.2026</td>
-                            </tr>
-                        </tbody>
+							<tbody>
+								<tr>
+									<td><strong>Ім'я</strong></td>
+									<td id="profile-name">Анастасія</td>
+								</tr>
+								<tr>
+									<td><strong>Email</strong></td>
+									<td id="profile-email">vakulko.a@example.com</td>
+								</tr>
+								<tr>
+									<td><strong>Стать</strong></td>
+									<td id="profile-gender">Жіноча</td>
+								</tr>
+								<tr>
+									<td><strong>Дата народження</strong></td>
+									<td id="profile-dob">15 травня 2005</td>
+								</tr>
+								<tr>
+									<td><strong>Мова вивчення</strong></td>
+									<td>Англійська</td>
+								</tr>
+								<tr>
+									<td><strong>Слів вивчено</strong></td>
+									<td id="profile-words-count">452</td>
+								</tr>
+								<tr>
+									<td><strong>Дата реєстрації</strong></td>
+									<td id="profile-reg-date">24.02.2026</td>
+								</tr>
+							</tbody>
                     </table>
 
                     <div class="mt-4 d-flex justify-content-end">
-                        <button class="btn btn-primary me-2">Редагувати профіль</button>
-                        <button class="btn btn-outline-danger">Вийти</button>
+                        <button id="btn-edit-profile" class="btn btn-primary me-2">Редагувати профіль</button>
+                        <button id="btn-logout" class="btn btn-outline-danger">Вийти</button>
                     </div>
                 </div>
             </div>
@@ -104,9 +103,11 @@
     <footer class="text-center">
         <div class="container">
             <p>© 2026 LingoLearn Application. Розроблено Анастасією Вакулко.</p>
+            <p class="small text-secondary">У межах лабораторної роботи №2 з дисципліни "Web-дизайн"</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script type="module" src="profile.js"></script>
 </body>
 </html>

@@ -28,18 +28,18 @@
         <div class="container d-flex justify-content-center">
             <div class="form-container">
                 <h2 class="text-center mb-4">Створити акаунт</h2>
-                <form>
+                <form id="register-form">
                     <div class="mb-3">
                         <label class="form-label">Ім'я</label>
-                        <input type="text" class="form-control" placeholder="Введіть ваше ім'я" required>
+                        <input id="reg-name" type="text" class="form-control" placeholder="Введіть ваше ім'я" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Email</label>
-                        <input type="email" class="form-control" placeholder="example@mail.com" required>
+                        <input id="reg-email" type="email" class="form-control" placeholder="example@mail.com" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Стать</label>
-                        <select class="form-select">
+                        <select id="reg-gender" class="form-select">
                             <option selected>Оберіть...</option>
                             <option value="male">Чоловіча</option>
                             <option value="female">Жіноча</option>
@@ -47,7 +47,11 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Дата народження</label>
-                        <input type="date" class="form-control" required>
+                        <input id="reg-dob" type="date" class="form-control" required>
+                    </div>
+					<div class="mb-3">
+                        <label class="form-label">Пароль</label>
+                        <input type="password" id="reg-password" class="form-control" required>
                     </div>
                     <button type="submit" class="btn btn-primary w-100">Зареєструватися</button>
                 </form>
@@ -57,7 +61,11 @@
     </main>
 
     <footer class="text-center">
-        <p>© 2026 LingoLearn Application</p>
+        <div class="container">
+            <p>© 2026 LingoLearn Application. Розроблено Анастасією Вакулко.</p>
+            <p class="small text-secondary">У межах лабораторної роботи №2 з дисципліни "Web-дизайн"</p>
+        </div>
     </footer>
+	<script type="module" src="register.js"></script>
 </body>
 </html>

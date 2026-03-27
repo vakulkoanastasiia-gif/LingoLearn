@@ -6,7 +6,8 @@
     <title>LingoLearn — Вивчення іноземних слів</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body { background-color: #f8f9fa; }
+        body { background-color: #f8f9fa; display: flex; flex-direction: column; min-height: 100vh; }
+		main { flex: 1; }
         .hero-section { background: #007bff; color: white; padding: 40px 0; }
         .word-card { min-height: 250px; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: bold; border-radius: 15px; }
         footer { background: #343a40; color: white; padding: 20px 0; margin-top: 50px; }
@@ -45,11 +46,10 @@
         <div class="container my-5">
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="list-group">
-                        <button class="list-group-item list-group-item-action active">Режим вивчення</button>
-                        <button class="list-group-item list-group-item-action">Контроль знань (Тест)</button>
-                        <button class="list-group-item list-group-item-action">Мій словник</button>
-                    </div>
+					<div class="list-group">
+						<button id="btn-study" class="list-group-item list-group-item-action active">Режим вивчення</button>
+						<button id="btn-control" class="list-group-item list-group-item-action">Контроль знань</button>
+					</div>
                     
                     <div class="card mt-4">
                         <div class="card-body">
@@ -67,21 +67,23 @@
                         <div class="card-header bg-white">
                             <span class="badge bg-primary">English — Ukrainian</span>
                         </div>
-                        <div class="card-body text-center p-5">
-                            <div class="word-card border mb-4 bg-light">
-                                Perseverance
-                            </div>
-                            <div class="d-flex justify-content-center gap-3">
-                                <button class="btn btn-outline-secondary btn-lg">Показати переклад</button>
-                                <button class="btn btn-success btn-lg">Знаю!</button>
-                                <button class="btn btn-danger btn-lg">Ще вчу</button>
-                            </div>
-                        </div>
-                        <div class="card-footer text-center">
-                            <button class="btn btn-link text-decoration-none">← Попереднє слово</button>
-                            <span class="mx-3 text-muted">Слово 5 із 50</span>
-                            <button class="btn btn-link text-decoration-none">Наступне слово →</button>
-                        </div>
+							<div class="card-body text-center p-5">
+								<div id="study-ui">
+									<div class="word-card border mb-4 bg-light">Perseverance</div>
+									<div class="d-flex justify-content-center gap-3">
+										<button class="btn btn-outline-secondary btn-lg">Показати переклад</button>
+										<button class="btn btn-success btn-lg">Знаю!</button>
+										<button class="btn btn-danger btn-lg">Ще вчу</button>
+									</div>
+								</div>
+
+								<div id="control-ui" class="d-none text-center">
+									<h4 class="mb-4">Як перекладається: <span id="control-word" class="text-primary fw-bold"></span>?</h4>
+									<input type="text" id="control-input" class="form-control form-control-lg mb-3" placeholder="Введіть переклад англійською (напр. Compiler)">
+									<button id="btn-check-word" class="btn btn-primary btn-lg w-100">Перевірити</button>
+									<div id="control-feedback" class="mt-3 fw-bold fs-5"></div>
+								</div>
+							</div>
                     </div>
                 </div>
             </div>
@@ -91,10 +93,11 @@
     <footer class="text-center">
         <div class="container">
             <p>© 2026 LingoLearn Application. Розроблено Анастасією Вакулко.</p>
-            <p class="small text-secondary">Лабораторна робота №1 з дисципліни "Web-дизайн"</p>
+            <p class="small text-secondary">У межах лабораторної роботи №2 з дисципліни "Web-дизайн"</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script type="module" src="controller.js"></script>
 </body>
 </html>
