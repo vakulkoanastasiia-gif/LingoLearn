@@ -10,7 +10,6 @@
 Тематика додатка — **LingoLearn** (Вивчення іноземних слів: режим вивчення та контролю знань).
 
 ### 🔗 Посилання на ресурси
-* **Звіт на Google Drive:** [Вставити посилання на Google Docs звіт]
 * **Репозиторій на GitHub:** [https://github.com/username/repository](https://github.com/username/repository) 
 
 ---
